@@ -4,7 +4,7 @@ import { DynamoDBDocumentClient, PutCommand, ScanCommand, DeleteCommand } from "
 import crypto from "crypto"; // Node 18+ has built-in crypto for randomUUID
 
 // DynamoDB setup
-const client = new DynamoDBClient({ region: "us-west-2" }); // replace with your region
+const client = new DynamoDBClient({ region: "ap-southeast-1" }); // replace with your region
 const ddbDocClient = DynamoDBDocumentClient.from(client);
 const TABLE_NAME = "BongoProducts"; // your DynamoDB table name
 
